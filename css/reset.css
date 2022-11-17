@@ -91,7 +91,7 @@ body {
     flex-direction: column;
     background-image: url(../images/bg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center 14%;
     background-repeat: no-repeat;
     font-family: 'Inter', sans-serif;
     font-style: normal;
