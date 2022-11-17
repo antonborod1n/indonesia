@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,7 +24,9 @@
         </a>
         <div class="header__inner-box">
           <label for="location">
-            <img src="" alt="">
+            <span class="material-symbols-outlined">
+              language
+            </span>
             <select name="location" id="local">
               <option value="en">English</option>
               <option value="ba">Bahasa</option>
@@ -33,6 +37,7 @@
       </div>
     </div>
   </header>
+
   <main class="main">
     <section class="top">
       <div class="container">
@@ -64,37 +69,101 @@
     <section class="offer">
       <div class="container">
         <div class="offer__inner">
-          <div class="sidebar">
-            <div class="sidebar__box">
-              <p class="sidebar__title">Job type</p>
-              <form class="search" action="#">
-                <input class="search__input" type="search">
+          <div class="filter">
+            <div class="filter__item">
+              <p class="filter-title1">Job type</p>
+              <form class="filter-search" action="#">
+                <input class="filter-search__input" type="search" placeholder="designer">
               </form>
             </div>
-            <div class="sidebar__box">
-              <p class="sidebar__title">Sort by</p>
-              <input class="input-sort" type="radio">
-              <input class="input-sort" type="checkbox">
+            <div class="filter__item">
+              <p class="form-sort__title form-title">Sort by</p>
+              <form class="form-sort" action="#">
+                <label class="form-sort__label">
+                  <input class="form-sort__input" type="radio" name="profit" value="latest">
+                  <span class="form-sort__radio">Latest</span>
+                </label>
+                <label class="form-sort__label">
+                  <input class="form-sort__input" type="radio" name="profit" value="highest">
+                  <span class="form-sort__radio">Highest paid</span>
+                </label>
+              </form>
             </div>
-            <div class="sidebar__box">
-              <p class="sidebar__title">Location</p>
-              <input class="input-location" type="checkbox">
-              <input class="input-location" type="checkbox">
-              <input class="input-location" type="checkbox">
-              <input class="input-location" type="checkbox">
-              <input class="input-location" type="checkbox">
-              <input class="input-location" type="checkbox">
-              <input class="input-location" type="checkbox">
-              <input class="input-location" type="checkbox">
+            <div class="filter__item">
+              <p class="filter-title form-title">Location</p>
+              <form class="form-local" action="#">
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="worldwide" value="worldwide">
+                  <span class="form-local__checkbox">worldwide</span>
+                </label>
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="europe" value="europe">
+                  <span class="form-local__checkbox">europe</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="north america" value="north america">
+                  <span class="form-local__checkbox">north america</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="africa" value="africa">
+                  <span class="form-local__checkbox">africa</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="latin america" value="latin america">
+                  <span class="form-local__checkbox">latin america</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="asia" value="asia">
+                  <span class="form-local__checkbox">asia</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="oceania" value="oceania">
+                  <span class="form-local__checkbox">oceania</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="middle east" value="middle east">
+                  <span class="form-local__checkbox">middle east</span>
+                </label>
+              </form>
             </div>
-            <div class="sidebar__box">
-              <p class="sidebar__title">Salary</p>
-              <input class="input-salary" type="checkbox">
-              <input class="input-salary" type="checkbox">
-              <input class="input-salary" type="checkbox">
-              <input class="input-salary" type="checkbox">
-              <input class="input-salary" type="checkbox">
-              <input class="input-salary" type="checkbox">
+            <div class="filter__item">
+              <p class="filter-title form-title">Salary</p>
+              <form class="form-sort" action="#">
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="min" value="">
+                  <span class="form-local__checkbox">min $ 1k</span>
+                </label>
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="3" value="">
+                  <span class="form-local__checkbox">$ 1k - 3k</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="5" value="">
+                  <span class="form-local__checkbox">$ 3k - 5k</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="10" value="">
+                  <span class="form-local__checkbox">$ 5k - 10k</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="20" value="">
+                  <span class="form-local__checkbox">$ 10k - 20k</span>
+                </label>
+
+                <label class="form-local__label">
+                  <input class="form-local__input" type="checkbox" name="max" value="">
+                  <span class="form-local__checkbox">$ > 20k</span>
+                </label>
+              </form>
             </div>
           </div>
 
@@ -123,10 +192,18 @@
                   vel nunc. Adipiscing massa nisi, quam mattis...
                   <a class="offer__lead-more" href="#">
                     more
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
                   </a>
                 </p>
                 <div class="offer__meta">
-                  <a class="offer__meta-btn" href="#">Apply</a>
+                  <a class="offer__meta-btn" href="#">
+                    Apply
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </a>
                   <span class="offer__meta-data">8 oct</span>
                 </div>
               </div>
@@ -152,10 +229,18 @@
                   vel nunc. Adipiscing massa nisi, quam mattis...
                   <a class="offer__lead-more" href="#">
                     more
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
                   </a>
                 </p>
                 <div class="offer__meta">
-                  <a class="offer__meta-btn" href="#">Apply</a>
+                  <a class="offer__meta-btn" href="#">
+                    Apply
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </a>
                   <span class="offer__meta-data">8 oct</span>
                 </div>
               </div>
@@ -182,10 +267,18 @@
                   vel nunc. Adipiscing massa nisi, quam mattis...
                   <a class="offer__lead-more" href="#">
                     more
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
                   </a>
                 </p>
                 <div class="offer__meta">
-                  <a class="offer__meta-btn" href="#">Apply</a>
+                  <a class="offer__meta-btn" href="#">
+                    Apply
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </a>
                   <span class="offer__meta-data">8 oct</span>
                 </div>
               </div>
@@ -218,15 +311,18 @@
       <div class="footer__inner">
         <div class="footer__item footer__articles">
           <p class="footer__title">Articles</p>
-          <p class="footer__text">
-            Magna lectus nisl sed non adipiscing fermentum
-            Ipsum convallis mattis enim gravida
-            Et enim semper neque, amet sodales volutpat mauris ornare
-          </p>
-          <a class="footer__link" href="#"> All articles</a>
+          <p class="footer__text">Magna lectus nisl sed non adipiscing fermentum</p>
+          <p class="footer__text">Ipsum convallis mattis enim gravida</p>
+          <p class="footer__text">Et enim semper neque, amet sodales volutpat mauris ornare</p>
+          <a class="footer__link" href="#">
+            All articles
+            <span class="material-symbols-outlined">
+              arrow_forward
+            </span>
+          </a>
         </div>
-        <div class="footer__menu">
-          <p class="footer__menu-title">Nec lacus ut</p>
+        <div class="footer__item footer__menu">
+          <p class="footer__title">Nec lacus ut</p>
           <ul class="footer__list">
             <li class="footer__list-item">Правила размещения</li>
             <li class="footer__list-item">Политика конфиденциальности</li>
@@ -234,7 +330,7 @@
             <li class="footer__list-item">О компании</li>
           </ul>
         </div>
-        <div class="footer__contact">
+        <div class="footer__item footer__contact">
           <div class="footer__contact-box">
             <p class="footer__title">Contact</p>
             <a class="logo" href="#">
@@ -248,16 +344,18 @@
             <li class="footer__list-item">Почта для обращений: ______________</li>
             <li class="footer__list-item">Общая почта сайта: _________</li>
           </ul>
-          <div class="footer__social">
-            <a class="footer__social-link" href="#">
-              <img class="footer__social-icon" src="./images/icons/social/telegram.svg" alt="Telegram">
-            </a>
-            <a class="footer__social-link" href="#">
-              <img class="footer__social-icon" src="./images/icons/social/viber.svg" alt="Viber">
-            </a>
-          </div>
-          <div class="footer__copy">
-            <p class="footer__copy-text">2022 © Copywright</p>
+          <div class="footer__contact-box">
+            <div class="footer__social">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-icon" src="./images/icons/social/telegram.svg" alt="Telegram">
+              </a>
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-icon" src="./images/icons/social/viber.svg" alt="Viber">
+              </a>
+            </div>
+            <div class="footer__copy">
+              <p class="footer__copy-text">2022 © Copywright</p>
+            </div>
           </div>
         </div>
       </div>
