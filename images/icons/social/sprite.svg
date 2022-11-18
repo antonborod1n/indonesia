@@ -33,10 +33,6 @@
 </filter>
 </defs>
 </symbol>
-
-<symbol id="arrow" viewBox="0 0 40 40">
-<path d="m12 19.625-1.075-1.075 5.825-5.8H4.375v-1.5H16.75l-5.825-5.8L12 4.375 19.625 12Z" />
-</symbol>
 </svg>
 
 

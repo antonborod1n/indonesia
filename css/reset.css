@@ -188,3 +188,134 @@ input,
 select {
     vertical-align: middle;
 }
+
+
+/* GLOBAL */
+
+.container {
+    max-width: 1060px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #333333;
+}
+
+.vacancy-main {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(50px);
+}
+
+.jq-selectbox__select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    padding: 0 25px 0 0;
+    border: none;
+    border-bottom-color: none;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    text-shadow: none;
+}
+
+.jq-selectbox__select:hover {
+    background: transparent;
+}
+
+.jq-selectbox__trigger {
+    border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    width: 11px;
+    height: 6px;
+    border: none;
+    background-image: url(../images/icons/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.jq-selectbox__dropdown {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 30px rgba(118, 115, 255, 0.3);
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+    width: 100%;
+    margin: 2px 0 0;
+    padding: 0;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.jq-selectbox li:hover {
+    background-color: #7774FF;
+    color: #FFF;
+}
+
+.jq-selectbox li.selected {
+    background-color: #FFF;
+    color: #333333;
+}
+
+
+.breadcrumbs {
+    padding: 34px 0 20px;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+}
+
+.breadcrumbs__item {
+    position: relative;
+}
+
+.breadcrumbs__item:hover .breadcrumbs__link {
+    color: #1311a8;
+}
+
+.breadcrumbs__item::after {
+    content: url(../images/icons/breadcrumbs-arrow.svg);
+    position: absolute;
+    top: -1px;
+    right: -12px;
+}
+
+.breadcrumbs__item:last-child::after {
+    content: "";
+}
+
+.breadcrumbs__link {
+    color: #5351B8;
+}
