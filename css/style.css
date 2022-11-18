@@ -696,3 +696,20 @@
     color: #8B8B8B;
     margin-left: 10px;
 }
+
+
+/* POLICY */
+
+.policy {
+    padding-bottom: 65px;
+}
+
+.policy__inner {}
+
+.policy__title {
+    margin: 20px 0 30px;
+}
+
+.policy__text {
+    margin-bottom: 10px;
+}
