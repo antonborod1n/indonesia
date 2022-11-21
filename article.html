@@ -40,87 +40,138 @@
   </header>
 
   <main class="main">
-    <div class="breadcrumbs">
-      <div class="container">
-        <ol class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">
-              Main
-            </a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">
-              Articles
-            </a>
-          </li>
-        </ol>
-      </div>
-    </div>
-
     <section class="article">
       <div class="container">
         <div class="article__inner">
-          <img class="article__img-main" src="./images/article/100.jpg" alt="Article main">
-          <ul class="article__contents-list">
-            <li class="article__contents-item">Правила размещения</li>
-            <li class="article__contents-item">Политика конфиденциальности</li>
-            <li class="article__contents-item">Вопросы и ответы</li>
-            <li class="article__contents-item">О компании</li>
-          </ul>
-          <div class="article__content">
-            <h1 class="article__title title">Sit ullamcorper nibh</h1>
-            <p class="article__text">
-              Ultrices porta velit arcu vivamus tortor. Ac purus elementum ultrices quam leo id id. Varius morbi
-              ullamcorper eget enim pellentesque. Adipiscing et est massa odio. Pretium morbi est tellus ut consectetur
-              ut mollis eget gravida. Faucibus sed consectetur laoreet lorem volutpat sem facilisis nulla. Non gravida
-              facilisi faucibus a lacus tempor. Adipiscing lacus eget augue nisl quisque a. Consequat sit non non nec ac
-              non pulvinar condimentum ut.
-            </p>
-            <p class="article__text">
-              Quam nam justo leo tempor imperdiet mauris malesuada enim amet. Aliquet faucibus ultrices diam
-              pellentesque non sit platea. Viverra odio nibh viverra consequat cursus habitasse sagittis et ipsum. Eget
-              pulvinar amet suspendisse proin potenti scelerisque posuere at. Ut iaculis nulla odio molestie. Ultricies
-              donec platea non tincidunt nisl justo nisl ornare.
-            </p>
-            <p class="article__text">
-              Eget fermentum tempor sit ut risus aliquet purus. Aliquam odio eget cras in massa aliquet. Orci dolor
-              vitae eget ornare sit. Platea pellentesque nisi urna blandit elit malesuada. Commodo volutpat varius at
-              semper mattis. Quam lectus urna amet in. Netus massa suspendisse ac tempus massa egestas in quam. Diam
-              amet suscipit adipiscing amet tellus sit tempus. Quam sed volutpat dignissim diam dictum pulvinar tortor
-              sed in. In justo tellus nec lacus.
-            </p>
-            <h2 class="article__title title">Sit ullamcorper nibh</h2>
-            <p class="article__text">
-              Laoreet nec sit in ipsum mauris vitae tincidunt. Diam varius suspendisse velit aliquet vitae est porttitor
-              non odio. Turpis a massa laoreet in ullamcorper egestas viverra habitasse auctor. Duis enim neque nunc
-              tellus commodo. At netus non vitae condimentum diam nunc. Leo vestibulum integer sit sodales velit amet
-              in. Magna sed risus sed erat duis. At congue eu convallis vitae aenean ultrices tellus. Vitae amet felis
-              donec a faucibus scelerisque id amet. Neque velit aliquam sit scelerisque nisl semper pharetra. Sit nunc
-              vel interdum morbi felis. Nec mauris diam cursus lacus pretium faucibus.
-            </p>
-            <p class="article__text">
-              Enim dictum mauris euismod libero ornare condimentum eget aliquet id. Sit malesuada eu auctor imperdiet
-              suspendisse. Bibendum ac nunc adipiscing ut vitae ultricies lacus. Consequat sit mattis semper nisi
-              volutpat. Pellentesque nunc nam nibh interdum integer. Nunc sodales viverra massa ipsum adipiscing
-              condimentum in sagittis. Est tortor consectetur eu sollicitudin tellus rhoncus. Tellus rutrum vitae
-              tristique dictum proin erat lacus pharetra lectus. Faucibus pellentesque a eu egestas auctor a. Imperdiet
-              sollicitudin congue et enim viverra. Nisl sed scelerisque mattis cursus semper potenti lectus dui.
-            </p>
-            <p class="article__text">
-              Turpis morbi felis ut pellentesque dis lectus feugiat. Ut integer et euismod sed. Purus viverra tincidunt
-              in quam. Auctor id commodo hac scelerisque proin scelerisque. A faucibus cursus pharetra posuere lacus
-              neque dictumst nisl neque. Scelerisque felis nunc vitae eget congue montes. Sed felis platea donec odio
-              justo ultricies risus amet habitasse. Non feugiat ac mattis consequat neque sapien elementum libero. Massa
-              in nulla convallis eget ut tempus non ante morbi. Egestas mi eu adipiscing et ullamcorper egestas nibh sit
-              rhoncus.
-            </p>
-            <p class="article__text">
-              Fringilla ullamcorper ac magna accumsan est feugiat quis lacinia. Senectus sagittis enim posuere lacinia
-              eget pulvinar eget ullamcorper. Dolor arcu ipsum turpis et tempus diam in. Urna blandit mauris nulla ac
-              egestas. Auctor non semper diam elit fringilla. Risus neque congue morbi tellus donec a. Velit tristique
-              scelerisque semper sit dui lacus quis. Tristique eu lorem elit vel. Mi vitae sed tortor sodales mattis
-              nunc nascetur interdum sed.
-            </p>
+          <div class="breadcrumbs">
+            <ol class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Main
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Articles
+                </a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="article__contents">
+            <img class="article__contents-img-main" src="./images/article/100.jpg" alt="Article main">
+            <ul class="article__contents-list">
+              <li class="article__contents-item-title">Содержание:</li>
+              <li class="article__contents-item">
+                <a class="article__contents-link" href="#">
+                  Правила размещения
+                </a>
+              </li>
+              <li class="article__contents-item">
+                <a class="article__contents-link" href="#">
+                  Политика конфиденциальности
+                </a>
+              </li>
+              <li class="article__contents-item">
+                <a class="article__contents-link" href="#">
+                  Вопросы и ответы
+                </a>
+              </li>
+              <li class="article__contents-item">
+                <a class="article__contents-link" href="#">
+                  О компании
+                </a>
+              </li>
+            </ul>
+            <div class="article__inner">
+              <h1 class="article__title title">Sit ullamcorper nibh</h1>
+              <p class="article__text">
+                Ultrices porta velit arcu vivamus tortor. Ac purus elementum ultrices quam leo id id. Varius morbi
+                ullamcorper eget enim pellentesque. Adipiscing et est massa odio. Pretium morbi est tellus ut
+                consectetur
+                ut mollis eget gravida. Faucibus sed consectetur laoreet lorem volutpat sem facilisis nulla. Non
+                gravida
+                facilisi faucibus a lacus tempor. Adipiscing lacus eget augue nisl quisque a. Consequat sit non non
+                nec
+                ac
+                non pulvinar condimentum ut.
+              </p>
+              <p class="article__text">
+                Quam nam justo leo tempor imperdiet mauris malesuada enim amet. Aliquet faucibus ultrices diam
+                pellentesque non sit platea. Viverra odio nibh viverra consequat cursus habitasse sagittis et ipsum.
+                Eget
+                pulvinar amet suspendisse proin potenti scelerisque posuere at. Ut iaculis nulla odio molestie.
+                Ultricies
+                donec platea non tincidunt nisl justo nisl ornare.
+              </p>
+              <p class="article__text">
+                Eget fermentum tempor sit ut risus aliquet purus. Aliquam odio eget cras in massa aliquet. Orci dolor
+                vitae eget ornare sit. Platea pellentesque nisi urna blandit elit malesuada. Commodo volutpat varius
+                at
+                semper mattis. Quam lectus urna amet in. Netus massa suspendisse ac tempus massa egestas in quam. Diam
+                amet suscipit adipiscing amet tellus sit tempus. Quam sed volutpat dignissim diam dictum pulvinar
+                tortor
+                sed in. In justo tellus nec lacus.
+              </p>
+              <h2 class="article__subtitle">Sit ullamcorper nibh</h2>
+              <p class="article__text">
+                Laoreet nec sit in ipsum mauris vitae tincidunt. Diam varius suspendisse velit aliquet vitae est
+                porttitor
+                non odio. Turpis a massa laoreet in ullamcorper egestas viverra habitasse auctor. Duis enim neque nunc
+                tellus commodo. At netus non vitae condimentum diam nunc. Leo vestibulum integer sit sodales velit
+                amet
+                in. Magna sed risus sed erat duis. At congue eu convallis vitae aenean ultrices tellus. Vitae amet
+                felis
+                donec a faucibus scelerisque id amet. Neque velit aliquam sit scelerisque nisl semper pharetra. Sit
+                nunc
+                vel interdum morbi felis. Nec mauris diam cursus lacus pretium faucibus.
+              </p>
+              <p class="article__text">
+                Enim dictum mauris euismod libero ornare condimentum eget aliquet id. Sit malesuada eu auctor
+                imperdiet
+                suspendisse. Bibendum ac nunc adipiscing ut vitae ultricies lacus. Consequat sit mattis semper nisi
+                volutpat. Pellentesque nunc nam nibh interdum integer. Nunc sodales viverra massa ipsum adipiscing
+                condimentum in sagittis. Est tortor consectetur eu sollicitudin tellus rhoncus. Tellus rutrum vitae
+                tristique dictum proin erat lacus pharetra lectus. Faucibus pellentesque a eu egestas auctor a.
+                Imperdiet
+                sollicitudin congue et enim viverra. Nisl sed scelerisque mattis cursus semper potenti lectus dui.
+              </p>
+              <p class="article__text">
+                Turpis morbi felis ut pellentesque dis lectus feugiat. Ut integer et euismod sed. Purus viverra
+                tincidunt
+                in quam. Auctor id commodo hac scelerisque proin scelerisque. A faucibus cursus pharetra posuere lacus
+                neque dictumst nisl neque. Scelerisque felis nunc vitae eget congue montes. Sed felis platea donec
+                odio
+                justo ultricies risus amet habitasse. Non feugiat ac mattis consequat neque sapien elementum libero.
+                Massa
+                in nulla convallis eget ut tempus non ante morbi. Egestas mi eu adipiscing et ullamcorper egestas nibh
+                sit
+                rhoncus.
+              </p>
+              <h3 class="article__subtitle">Sit ullamcorper nibh</h3>
+              <p class="article__text">
+                Fringilla ullamcorper ac magna accumsan est feugiat quis lacinia. Senectus sagittis enim posuere
+                lacinia
+                eget pulvinar eget ullamcorper. Dolor arcu ipsum turpis et tempus diam in. Urna blandit mauris nulla
+                ac
+                egestas. Auctor non semper diam elit fringilla. Risus neque congue morbi tellus donec a. Velit
+                tristique
+                scelerisque semper sit dui lacus quis. Tristique eu lorem elit vel. Mi vitae sed tortor sodales mattis
+                nunc nascetur interdum sed.
+              </p>
+
+              <h3 class="article__subtitle">Sit ullamcorper nibh</h3>
+              <p class="article__text">
+                Fringilla ullamcorper ac magna accumsan est feugiat quis lacinia. Senectus sagittis enim posuere
+                lacinia
+                eget pulvinar eget ullamcorper. Dolor arcu ipsum turpis et tempus diam in. Urna blandit mauris nulla
+                ac
+                egestas. Auctor non semper diam elit fringilla. Risus neque congue morbi tellus donec a. Velit
+                tristique
+                scelerisque semper sit dui lacus quis. Tristique eu lorem elit vel. Mi vitae sed tortor sodales mattis
+                nunc nascetur interdum sed.
+              </p>
+            </div>
           </div>
         </div>
       </div>
