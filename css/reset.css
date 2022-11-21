@@ -198,6 +198,12 @@ select {
     margin: 0 auto;
 }
 
+.container-article {
+    max-width: 1060px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .btn {
     border: none;
     cursor: pointer;
