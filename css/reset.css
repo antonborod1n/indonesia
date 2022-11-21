@@ -89,10 +89,11 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(../images/bg.jpg);
+    background: rgba(118, 115, 255, 0.3);
+    /*  background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: center 14%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;

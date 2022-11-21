@@ -50,8 +50,8 @@
             <input class="search__input" type="search">
             <button class="search__btn" type="submit">Search</button>
           </form>
-          <p class="subtitle">More than 100500 remote vacancies</p>
-          <p class="subtitle">For job-seekers from Indonesia and APAC countries</p>
+          <p class="top__subtitle top__subtitle-more">More than 100500 remote vacancies</p>
+          <p class="top__subtitle top__subtitle-job">For job-seekers from Indonesia and APAC countries</p>
           <div class="top__control">
             <h2 class="top__control-title">Jobs from</h2>
             <div class="top__control-btns">
@@ -64,14 +64,22 @@
               <button class="top-control-btn" type="button">Angellist</button>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
     <section class="offer">
       <div class="container">
+        <button class="filter-btn" type="button">
+          Filter
+          <img src="./images/icons/filter.svg" alt="Filter">
+        </button>
         <div class="offer__inner">
           <div class="filter">
+            <button class="filter-btn-close" type="button">
+              <img src="./images/icons/close.svg" alt="Close">
+            </button>
             <div class="filter__item">
               <p class="form-search__title form-title">Job type</p>
               <form class="filter-search" action="#">
@@ -347,19 +355,14 @@
           </ul>
         </div>
         <div class="footer__item footer__contact">
-          <div class="footer__contact-box">
-            <p class="footer__title">Contact</p>
-            <a class="logo" href="#">
-              <img class="logo__img" src="./images/logo.svg" alt="logo">
-            </a>
-          </div>
-
           <ul class="footer__list">
-            <li class="footer__list-item">Тел. Тех. Поддержки: __________________</li>
-            <li class="footer__list-item">Контактный тел: ___________________</li>
-            <li class="footer__list-item">Почта для обращений: ______________</li>
+            <li class="footer__title">Contact</li>
+            <li class="footer__list-item">Тел. Тех. Поддержки: _______</li>
+            <li class="footer__list-item">Контактный тел: ____________</li>
+            <li class="footer__list-item">Почта для обращений: _______</li>
             <li class="footer__list-item">Общая почта сайта: _________</li>
           </ul>
+
           <div class="footer__contact-box">
             <div class="footer__social">
               <a class="footer__social-link" href="#">
@@ -380,6 +383,9 @@
             </div>
           </div>
         </div>
+        <a class="footer__logo" href="#">
+          <img class="footer__logo-img" src="./images/logo.svg" alt="logo">
+        </a>
       </div>
     </div>
   </footer>
