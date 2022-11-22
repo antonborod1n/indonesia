@@ -873,9 +873,9 @@
     }
 
     .header__inner {
-        padding: 15px 0px 30px;
+        padding: 15px 0px;
+        align-items: center;
     }
-
 
     .filter-search__input {
         width: 80%;
@@ -886,11 +886,7 @@
     }
 
     .header-page {
-        padding-bottom: 20px;
-    }
-
-    .header__inner {
-        align-items: center;
+        padding-bottom: 0px;
     }
 
     .header__languages {
@@ -962,18 +958,6 @@
         line-height: 15px;
     }
 
-    .title {
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 10px;
-    }
-
-    .subtitle {
-        font-size: 16px;
-        line-height: 19px;
-        margin-bottom: 10px;
-    }
-
     .article {
         padding-bottom: 0;
     }
@@ -1003,6 +987,15 @@
         display: none;
     }
 
+    .policy {
+        padding-bottom: 35px;
+    }
+
+    .policy__title {
+        margin: 0;
+    }
+
+
     .footer__inner {
         display: flex;
         flex-direction: column;
@@ -1010,6 +1003,18 @@
 
     .footer__contact {
         width: 280px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 10px;
     }
 }
 
