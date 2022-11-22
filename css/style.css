@@ -502,12 +502,22 @@
     margin: 0 0 0 40px;
 }
 
-.vacancy__info {
+.vacancy__inner {
     display: flex;
     justify-content: space-between;
 }
 
-.vacancy__inner {}
+.vacancy-benefits,
+.vacancy__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.vacancy-benefits__box {
+    margin-bottom: 26px;
+    align-self: flex-end;
+}
+
 
 .vacancy__info-box {
     margin-bottom: 26px;
@@ -540,39 +550,30 @@
     color: #8B8B8B;
 }
 
-.vacancy__info-descr {
+.vacancy-benefits__subtitle {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 15px;
 }
 
-.vacancy__info-logo {
+.vacancy-benefits__link {
     border-radius: 10px;
     background: #F5F5F5;
 }
 
-.vacancy__info-img {
+.vacancy-benefits__img {
     width: 129px;
     height: 39px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.vacancy-benefits {
-    display: flex;
-    justify-content: space-between;
-}
-
-.vacancy-benefits__list {
+.vacancy__info-list {
     list-style: none;
 }
 
-.vacancy__list {
-    padding-left: 30px;
-}
-
-.vacancy__benefits-item {
+.vacancy__info-item {
     font-size: 14px;
     line-height: 17px;
     font-style: italic;
@@ -583,7 +584,9 @@
     font-style: italic;
     max-width: 275px;
     text-align: right;
+    align-self: flex-end;
 }
+
 
 .vacancy__content {
     font-size: 20px;
@@ -598,6 +601,10 @@
 
 .vacancy__content-text {
     margin-bottom: 5px;
+}
+
+.vacancy__list {
+    padding-left: 30px;
 }
 
 .vacancy__content-slogan {
@@ -850,6 +857,11 @@
 }
 
 @media (max-width: 700px) {
+
+    .header__inner {
+        padding: 15px 0px;
+    }
+
     .blog__item {
         display: flex;
         max-width: 100%;
@@ -862,6 +874,25 @@
         height: 100%;
         max-width: 200px;
     }
+
+    .vacancy-top {
+        display: none;
+    }
+
+    .vacancy__inner {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .vacancy-benefits__box,
+    .vacancy-benefits__text {
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .vacancy__info {
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -873,7 +904,6 @@
     }
 
     .header__inner {
-        padding: 15px 0px;
         align-items: center;
     }
 
@@ -995,6 +1025,45 @@
         margin: 0;
     }
 
+    .vacancy__info-title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .vacancy__info-link {
+        width: 79px;
+        height: 25px;
+    }
+
+    .vacancy__info-item,
+    .vacancy-benefits__text,
+    .vacancy__info-link,
+    .vacancy__content-text,
+    .vacancy__list-item,
+    .vacancy__content-slogan,
+    .vacancy__content-title {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .vacancy-benefits__subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .vacancy-benefits__box {
+        margin-bottom: 10px;
+    }
+
+    .vacancy__btn {
+        width: 100%;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 19px;
+    }
 
     .footer__inner {
         display: flex;
