@@ -1,0 +1,21 @@
+{
+  "name": "indonesia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch data/goods.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonborod1n/indonesia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonborod1n/indonesia/issues"
+  },
+  "homepage": "/index.html"
+}

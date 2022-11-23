@@ -317,8 +317,6 @@
     margin-bottom: 20px;
 }
 
-
-
 .offer__preview-top-box {
     display: flex;
     justify-content: space-between;
@@ -336,8 +334,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 98px;
-    height: 29px;
+    padding: 10px;
     background: #B5DBFF;
     border-radius: 10px;
     font-size: 16px;
@@ -778,10 +775,6 @@
 
 /* MEDIA */
 
-
-
-
-
 @media (max-width: 1020px) {
 
     .filter {
@@ -897,10 +890,26 @@
 
 
 @media (max-width: 550px) {
-
     body {
         font-size: 14px;
         line-height: 17px;
+    }
+
+    .top__subtitle-job,
+    .offer__preview-top-link,
+    .offer__lead-more,
+    .breadcrumbs__link,
+    .article__contents-list,
+    .article__text,
+    .vacancy__info-item,
+    .vacancy-benefits__text,
+    .vacancy__info-link,
+    .vacancy__content-text,
+    .vacancy__list-item,
+    .vacancy__content-slogan,
+    .vacancy__content-title {
+        font-size: 12px;
+        line-height: 15px;
     }
 
     .header__inner {
@@ -931,11 +940,6 @@
         margin-bottom: 20px;
     }
 
-    .top__subtitle-job {
-        font-size: 12px;
-        line-height: 15px;
-    }
-
     .top__control-title {
         display: none;
     }
@@ -956,13 +960,7 @@
     .offer__preview-top-link {
         width: 79px;
         height: 25px;
-        font-size: 12px;
-        line-height: 15px;
-    }
 
-    .offer__lead-more {
-        font-size: 12px;
-        line-height: 15px;
     }
 
     .offer__meta-btn {
@@ -979,13 +977,6 @@
 
     .breadcrumbs {
         padding: 20px 0;
-    }
-
-    .breadcrumbs__link,
-    .article__contents-list,
-    .article__text {
-        font-size: 12px;
-        line-height: 15px;
     }
 
     .article {
@@ -1025,6 +1016,10 @@
         margin: 0;
     }
 
+    .vacancy {
+        padding-bottom: 35px;
+    }
+
     .vacancy__info-title {
         font-size: 16px;
         line-height: 19px;
@@ -1033,17 +1028,6 @@
     .vacancy__info-link {
         width: 79px;
         height: 25px;
-    }
-
-    .vacancy__info-item,
-    .vacancy-benefits__text,
-    .vacancy__info-link,
-    .vacancy__content-text,
-    .vacancy__list-item,
-    .vacancy__content-slogan,
-    .vacancy__content-title {
-        font-size: 12px;
-        line-height: 15px;
     }
 
     .vacancy-benefits__subtitle {
