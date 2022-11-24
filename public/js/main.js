@@ -1,33 +1,35 @@
-$(function () {
-  $('.header__languages-select').styler();
-})
+window.addEventListener('DOMContentLoaded', () => {
+  
+//Стилизация select
+  $(function () {
+    $('.header__languages-select').styler();
+  });
 
-const filter = document.querySelector('.filter');
-const filterBtn = document.querySelector('.filter-btn');
-const filterClose = document.querySelector('.filter-btn-close');
+//Фильтр мобильная версия
+  const filter = document.querySelector('.filter');
+  const filterBtn = document.querySelector('.filter-btn');
+  const filterClose = document.querySelector('.filter-btn-close');
 
-filterBtn.addEventListener('click', function () {
-  filter.classList.add('filter--active');
-  document.body.style.overflow = 'hidden';
-});
-
-filterClose.addEventListener('click', function () {
-  filter.classList.remove('filter--active');
-  document.body.style.overflow = '';
-});
-
-const mainProductBox = document.querySelector('.offer__preview');
-const GOODS_LIST = 'http://localhost:3000/data';
+  filterBtn.addEventListener('click', function () {
+    filter.classList.add('filter--active');
+  });
+  
+  filterClose.addEventListener('click', function () {
+    filter.classList.remove('filter--active');
+  });
 
 // Получение данных о товарах
-async function getGoods() {
-  const res = await fetch(GOODS_LIST);
-  const mainProductArr = await res.json();
-  renderGoods(mainProductArr);
-  renderFirstGoods(mainProductArr);
-}
+  const mainProductBox = document.querySelector('.offer__preview');
+  const GOODS_LIST = 'http://localhost:3000/data';
 
-getGoods();
+  async function getGoods() {
+    const res = await fetch(GOODS_LIST);
+    const mainProductArr = await res.json();
+    renderGoods(mainProductArr);
+    renderFirstGoods(mainProductArr);
+  }
+  
+  getGoods();
 
 //Отрисовка товаров на странице
 function renderGoods(mainProductArr) {
@@ -35,7 +37,7 @@ function renderGoods(mainProductArr) {
     const newArr = item.product;
     newArr.forEach(elem => {
       const productHtml = `
-                            <div class="offer__item ${elem.company.toLowerCase()}">
+                            <div class="offer__item ${elem.company.toLowerCase()} ${elem.location.toLowerCase()}">
                             <div class="offer__preview-top">
                               <div class="offer__preview-top-box">
                                 <p class="offer__preview-top-title">${elem.title}</p>
@@ -77,8 +79,9 @@ function renderGoods(mainProductArr) {
       filterButtons();
     });
   });
-}
+  }
 
+//Кнопки 
 function filterButtons() {
   const filterItems = document.querySelectorAll('.offer__item');
   const controlBtns = document.querySelector('.top__control-btns');
@@ -95,6 +98,11 @@ function filterButtons() {
         elem.classList.add('hide')
       }
     })
-
   })
 }
+});
+
+
+
+
+
