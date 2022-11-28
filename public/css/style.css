@@ -473,6 +473,10 @@
     margin-bottom: 10px;
 }
 
+.footer__list-link {
+    color: #333333;
+}
+
 .footer__contact {
     width: 480px;
 }
@@ -1076,5 +1080,9 @@
 @media (max-width: 450px) {
     .blog__img {
         max-width: 130px;
+    }
+
+    .footer__contact {
+        margin-bottom: 0;
     }
 }

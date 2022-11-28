@@ -37,7 +37,7 @@ function renderGoods(mainProductArr) {
     const newArr = item.product;
     newArr.forEach(elem => {
       const productHtml = `
-                            <div class="offer__item ${elem.company.toLowerCase()} ${elem.location.toLowerCase()}">
+                            <div class="offer__item ${elem.company.toLowerCase()} ${elem.profile.toLowerCase()}">
                             <div class="offer__preview-top">
                               <div class="offer__preview-top-box">
                                 <p class="offer__preview-top-title">${elem.title}</p>
@@ -65,7 +65,7 @@ function renderGoods(mainProductArr) {
                               </a>
                             </p>
                             <div class="offer__meta">
-                              <a class="offer__meta-btn" href="#">
+                              <a class="offer__meta-btn" href="https://antonborod1n.github.io/indonesia/public/vacancy.html">
                                 Apply
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#FFFFFF">
                                   <path d="m12 19.625-1.075-1.075 5.825-5.8H4.375v-1.5H16.75l-5.825-5.8L12 4.375 19.625 12Z" />
@@ -100,6 +100,20 @@ function filterButtons() {
     })
   })
 }
+
+jobArr = ["developer", "designer", "Analyst", "Financial", "Security", "Software", "DevOps", "Frontend"];
+
+const filterSearch = document.querySelector('.filter-search__input');
+
+filterSearch.oninput = function() {
+  const value = this.value.trim();
+
+
+  console.log(value);
+}
+
+
+
 });
 
 

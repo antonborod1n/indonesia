@@ -75,44 +75,47 @@
           <img src="./images/icons/filter.svg" alt="Filter">
         </button>
         <div class="offer__inner">
-          <div class="filter">
+          <form action="#" class="filter">
             <button class="filter-btn-close" type="button">
               <img src="./images/icons/close.svg" alt="Close">
             </button>
             <div class="filter__item">
               <p class="form-search__title form-title">Job type</p>
-              <form class="filter-search" action="#">
+              <div class="filter-search">
                 <input class="filter-search__input" type="search" placeholder="designer">
-              </form>
+              </div>
             </div>
             <div class="filter__item">
               <p class="form-sort__title form-title">Sort by</p>
-              <form class="form-sort" action="#">
-                <label class="form-sort__label">
-                  <input class="form-sort__input" type="radio" name="profit" value="latest">
+              <div class="form-sort">
+                <label class="form-sort__label" for="latest">
+                  <input class="form-sort__input" type="radio" id="latest" name="latest" value="latest">
                   <span class="form-sort__radio">Latest</span>
                 </label>
-                <label class="form-sort__label">
-                  <input class="form-sort__input" type="radio" name="profit" value="highest">
+                <label class="form-sort__label" for="highest">
+                  <input class="form-sort__input" type="radio" id="highest" name="highest" value="highest">
                   <span class="form-sort__radio">Highest paid</span>
                 </label>
-              </form>
+              </div>
             </div>
             <div class="filter__item">
               <p class="filter-title form-title">Location</p>
-              <form class="form-local" action="#">
+              <div class="form-local">
                 <label class="form-local__label">
                   <input class="form-local__input" type="checkbox" name="worldwide" value="worldwide">
                   <span class="form-local__checkbox">worldwide</span>
                 </label>
+
                 <label class="form-local__label">
                   <input class="form-local__input" type="checkbox" name="europe" value="europe">
                   <span class="form-local__checkbox">europe</span>
                 </label>
+
                 <label class="form-local__label">
                   <input class="form-local__input" type="checkbox" name="europe" value="europe">
                   <span class="form-local__checkbox">europe</span>
                 </label>
+
                 <label class="form-local__label">
                   <input class="form-local__input" type="checkbox" name="europe" value="europe">
                   <span class="form-local__checkbox">europe</span>
@@ -147,15 +150,17 @@
                   <input class="form-local__input" type="checkbox" name="middle east" value="middle east">
                   <span class="form-local__checkbox">middle east</span>
                 </label>
-              </form>
+              </div>
             </div>
             <div class="filter__item">
               <p class="filter-title form-title">Salary</p>
-              <form class="form-salary" action="#">
+              <div class="form-salary">
+
                 <label class="form-salary__label">
                   <input class="form-salary__input" type="checkbox" name="min" value="">
                   <span class="form-salary__checkbox">min $ 1k</span>
                 </label>
+
                 <label class="form-salary__label">
                   <input class="form-salary__input" type="checkbox" name="3" value="">
                   <span class="form-salary__checkbox">$ 1k - 3k</span>
@@ -180,9 +185,9 @@
                   <input class="form-salary__input" type="checkbox" name="max" value="">
                   <span class="form-salary__checkbox">$ > 20k</span>
                 </label>
-              </form>
+              </div>
             </div>
-          </div>
+          </form>
 
           <div class="offer__content">
             <div class="offer__preview">
@@ -338,7 +343,7 @@
           <p class="footer__text">Magna lectus nisl sed non adipiscing fermentum</p>
           <p class="footer__text">Ipsum convallis mattis enim gravida</p>
           <p class="footer__text">Et enim semper neque, amet sodales volutpat mauris ornare</p>
-          <a class="footer__link" href="#">
+          <a class="footer__link" href="https://antonborod1n.github.io/indonesia/public/blog.html">
             All articles
             <span class="material-symbols-outlined">
               arrow_forward
@@ -348,10 +353,26 @@
         <div class="footer__item footer__menu">
           <p class="footer__title">Nec lacus ut</p>
           <ul class="footer__list">
-            <li class="footer__list-item">Правила размещения</li>
-            <li class="footer__list-item">Политика конфиденциальности</li>
-            <li class="footer__list-item">Вопросы и ответы</li>
-            <li class="footer__list-item">О компании</li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Правила размещения
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="https://antonborod1n.github.io/indonesia/public/policy.html">
+                Политика конфиденциальности
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Вопросы и ответы
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                О компании
+              </a>
+            </li>
           </ul>
         </div>
         <div class="footer__item footer__contact">
@@ -371,7 +392,7 @@
                   </use>
                 </svg>
               </a>
-              <a class="footer__social-link" href="#">
+              <a class="footer__social-link" href="https://www.viber.com/ru/" target="_blank">
                 <svg width="40" height="40" fill="none">
                   <use xlink:href="images/icons/social/sprite.svg#viber">
                   </use>
@@ -383,7 +404,7 @@
             </div>
           </div>
         </div>
-        <a class="footer__logo" href="#">
+        <a class="footer__logo" href="https://telegram.org/" target="_blank">
           <img class="footer__logo-img" src="./images/logo.svg" alt="logo">
         </a>
       </div>
