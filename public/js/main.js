@@ -1,11 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
-  
-//Стилизация select
+
+  //Стилизация select
   $(function () {
     $('.header__languages-select').styler();
   });
 
-//Фильтр мобильная версия
+  //Фильтр мобильная версия
   const filter = document.querySelector('.filter');
   const filterBtn = document.querySelector('.filter-btn');
   const filterClose = document.querySelector('.filter-btn-close');
@@ -13,31 +13,30 @@ window.addEventListener('DOMContentLoaded', () => {
   filterBtn.addEventListener('click', function () {
     filter.classList.add('filter--active');
   });
-  
+
   filterClose.addEventListener('click', function () {
     filter.classList.remove('filter--active');
   });
 
-// Получение данных о товарах
-  const mainProductBox = document.querySelector('.offer__preview');
-  const GOODS_LIST = 'http://localhost:3000/data';
+  // Получение данных 
+  const mainOfferBox = document.querySelector('.offer__preview');
+  const OFFER_LIST = 'http://localhost:3000/data';
 
-  async function getGoods() {
-    const res = await fetch(GOODS_LIST);
-    const mainProductArr = await res.json();
-    renderGoods(mainProductArr);
-    renderFirstGoods(mainProductArr);
+  async function getOffers() {
+    const res = await fetch(OFFER_LIST);
+    const offerArr = await res.json();
+    renderOffers(offerArr);
   }
-  
-  getGoods();
 
-//Отрисовка товаров на странице
-function renderGoods(mainProductArr) {
-  mainProductArr.forEach(item => {
-    const newArr = item.product;
-    newArr.forEach(elem => {
-      const productHtml = `
-                            <div class="offer__item ${elem.company.toLowerCase()} ${elem.profile.toLowerCase()}">
+  getOffers();
+
+  //Отрисовка на странице
+  function renderOffers(offerArr) {
+    offerArr.forEach(item => {
+      const newArr = item.product;
+      newArr.forEach(elem => {
+        const productHtml = `
+                            <div class="offer__item ${elem.company.toLowerCase()} ${elem.profile.toLowerCase()}" data-id="${elem.id}">
                             <div class="offer__preview-top">
                               <div class="offer__preview-top-box">
                                 <p class="offer__preview-top-title">${elem.title}</p>
@@ -75,45 +74,31 @@ function renderGoods(mainProductArr) {
                             </div>
                           </div>
         `;
-      mainProductBox.insertAdjacentHTML('beforeend', productHtml);
-      filterButtons();
+        mainOfferBox.insertAdjacentHTML('beforeend', productHtml);
+        filterButtons();
+      });
     });
-  });
   }
 
-//Кнопки 
-function filterButtons() {
-  const filterItems = document.querySelectorAll('.offer__item');
-  const controlBtns = document.querySelector('.top__control-btns');
+  //Кнопки 
+  function filterButtons() {
+    const filterItems = document.querySelectorAll('.offer__item');
+    const controlBtns = document.querySelector('.top__control-btns');
 
-  controlBtns.addEventListener('click', (e) => {
-    const target = e.target;
+    controlBtns.addEventListener('click', (e) => {
+      const target = e.target;
 
-    if (target.tagName !== 'BUTTON') return false;
-    let filterClass = target.dataset['filter'];
+      if (target.tagName !== 'BUTTON') return false;
+      let filterClass = target.dataset['filter'];
 
-    filterItems.forEach(elem => {
-      elem.classList.remove('hide')
-      if (!elem.classList.contains(filterClass)) {
-        elem.classList.add('hide')
-      }
+      filterItems.forEach(elem => {
+        elem.classList.remove('hide')
+        if (!elem.classList.contains(filterClass)) {
+          elem.classList.add('hide')
+        }
+      })
     })
-  })
-}
-
-jobArr = ["developer", "designer", "Analyst", "Financial", "Security", "Software", "DevOps", "Frontend"];
-
-const filterSearch = document.querySelector('.filter-search__input');
-
-filterSearch.oninput = function() {
-  const value = this.value.trim();
-
-
-  console.log(value);
-}
-
-
-
+  }
 });
 
 

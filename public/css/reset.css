@@ -111,6 +111,11 @@ main {
     display: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 article,
 aside,
 details,
