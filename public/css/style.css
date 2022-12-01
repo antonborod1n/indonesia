@@ -175,9 +175,6 @@
     margin-bottom: 67px;
 }
 
-.offer__inner {}
-
-
 .filter {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(50px);
@@ -731,36 +728,66 @@
 
 .article {
     padding-bottom: 55px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(50px);
+}
+
+.article__top {
+    margin-bottom: 30px;
 }
 
 .article__inner {
-    background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0px 0px 60px rgba(118, 115, 255, 0.3);
-    backdrop-filter: blur(50px);
-    border-radius: 40px;
-    padding: 16px 65px 50px;
+    padding: 16px 0px 50px;
 }
 
-.article__contents-img {
+.article__column {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 79px;
+}
+
+.article__contents {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.article__aside {
+    grid-area: 1 / 2 / 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.article__aside-item {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 10px 60px rgba(4, 0, 200, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    padding: 23px 26px 33px;
+}
+
+.article__top-img {
     max-width: 100%;
     border-radius: 20px;
     object-fit: cover;
     margin-bottom: 30px;
 }
 
-.article__contents-list {
+.article__top-list {
     list-style: none;
     margin-bottom: 30px;
 }
 
-.article__contents-link {
+a.article__top-link {
     display: block;
     text-decoration-line: underline;
     color: #5351B8;
     margin-bottom: 10px;
+    text-decoration: underline;
 }
 
-.article__contents-item-title {
+.article__top-title {
     margin-bottom: 15px;
 }
 
@@ -771,6 +798,63 @@
 .article__text {
     margin-bottom: 20px;
 }
+
+
+.article__aside {}
+
+.article__aside-item {}
+
+.aside__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.article__aside-list {}
+
+.article__aside-list-item {
+    margin-bottom: 10px;
+}
+
+.article__aside-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.article__aside-list-item-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.article__aside-price {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.article__aside-company {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.article__aside-list-items {
+    margin-bottom: 30px;
+}
+
+.article__aside-list-items:last-child {
+    margin-bottom: 0;
+}
+
+.article__aside-link-more {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
 
 .subtitle {
     font-size: 26px;
