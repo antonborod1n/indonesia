@@ -56,25 +56,25 @@ window.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <p class="offer__lead">
                             ${elem.text}
-                              <a class="offer__lead-more" href="#">
-                                more
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="#8B8B8B">
-                                  <path d="m10 15.688-.771-.792 4.375-4.354H4.312V9.458h9.292L9.229 5.104 10 4.312 15.688 10Z" />
-                                </svg>
-                              </a>
+                            <a class="offer__lead-more" href="#">
+                            more
+                            <span class="material-symbols-outlined">
+                              arrow_right_alt
+                            </span>
+                          </a>
                             </p>
                             <div class="offer__meta">
-                              <a class="offer__meta-btn" href="https://antonborod1n.github.io/indonesia/public/vacancy.html">
-                                Apply
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#FFFFFF">
-                                  <path d="m12 19.625-1.075-1.075 5.825-5.8H4.375v-1.5H16.75l-5.825-5.8L12 4.375 19.625 12Z" />
-                                </svg>
-                              </a>
+                            <a class="offer__meta-btn" href="#">
+                            Apply
+                            <span class="material-symbols-outlined">
+                              arrow_right_alt
+                            </span>
+                          </a>
                               <span class="offer__meta-data">${elem.date}</span>
                             </div>
                           </div>
         `;
-        mainOfferBox.insertAdjacentHTML('beforeend', productHtml);
+        mainOfferBox.insertAdjacentHTML('afterbegin', productHtml);
         filterButtons();
       });
     });
@@ -99,6 +99,27 @@ window.addEventListener('DOMContentLoaded', () => {
       })
     })
   }
+
+  //Кнопка показа show more
+
+  const showMoreBtn = document.querySelector('.show-more__btn');
+  let items = 5;
+
+  showMoreBtn.addEventListener('click', () => {
+    const filterItems = document.querySelectorAll('.offer__item');
+    const itemsLength = filterItems.length;
+    items += 5;
+    const arr = Array.from(document.querySelectorAll('.offer__item'));
+    const visibleArr = arr.slice(0, items);
+
+    visibleArr.forEach(elem => {
+      elem.classList.add('offer__item-visible');
+    });
+    console.log(itemsLength)
+    if (visibleArr.length === itemsLength) {
+      showMoreBtn.style.display = 'none';
+    }
+  })
 });
 
 
