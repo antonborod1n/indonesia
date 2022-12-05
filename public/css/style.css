@@ -1,3 +1,14 @@
+.page__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 20px 0;
+}
+
+.contacts__list-item {
+    margin-bottom: 20px;
+}
+
 .offer__inner {
     display: flex;
     justify-content: space-between;
@@ -191,6 +202,7 @@
 
 .offer {
     margin-bottom: 67px;
+    position: relative;
 }
 
 .filter {
@@ -256,6 +268,10 @@
 
 .filter__item {
     margin-bottom: 32px;
+}
+
+.filter__item:last-child {
+    margin-bottom: 0;
 }
 
 .form-title {
@@ -335,7 +351,7 @@
     display: none;
 }
 
-.offer__item.offer__item-visible {
+.offer__item.visible {
     display: block;
 }
 
@@ -781,13 +797,26 @@
     padding-bottom: 65px;
 }
 
-.policy__inner {}
-
 .policy__title {
     margin: 20px 0 30px;
 }
 
 .policy__text {
+    margin-bottom: 10px;
+}
+
+
+/* PAGE */
+
+.page {
+    padding-bottom: 65px;
+}
+
+.page__title {
+    margin: 20px 0 30px;
+}
+
+.page__text {
     margin-bottom: 10px;
 }
 
@@ -996,14 +1025,16 @@ a.article__top-link {
 
     .filter {
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: 0;
+        width: 100%;
         z-index: 10;
         background: rgba(255, 255, 255, 0.7);
         box-shadow: 0px -5px 60px rgba(51, 48, 157, 0.3);
         border-radius: 20px 20px 0px 0px;
         transform: translateX(-500%);
         transition: all .3s;
+
     }
 
     .filter--active {
@@ -1022,7 +1053,18 @@ a.article__top-link {
     }
 
     .filter-btn {
-        display: block;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 67px;
+        height: 27px;
+    }
+
+    .filter-btn::after {
+        content: url(../images/icons/filter.svg);
+        position: absolute;
+        right: 6px;
+        top: 6px;
     }
 
     .offer__preview {
@@ -1072,7 +1114,7 @@ a.article__top-link {
         object-fit: cover;
         border-radius: 20px 0 0 20px;
         height: 100%;
-        max-width: 200px;
+        width: 200px;
     }
 
     .vacancy-top {
@@ -1291,12 +1333,17 @@ a.article__top-link {
         line-height: 19px;
         margin-bottom: 10px;
     }
+
+    .page__subtitle {
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 
 
 @media (max-width: 450px) {
     .blog__img {
-        max-width: 130px;
+        width: 130px;
     }
 
     .footer__contact {

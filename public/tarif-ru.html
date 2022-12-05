@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Vacancy</title>
+  <title>Тарифы</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header-page">
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="#">
@@ -36,95 +36,54 @@
           <button class="header__btn btn" type="button">Post a job</button>
         </div>
       </div>
-
-      <div class="vacancy-top">
-        <h1 class="vacancy-top__title title">Find a remote job</h1>
-        <form class="vacancy-top__search search" action="#">
-          <input class="vacancy-top__search-input search__input" type="search">
-        </form>
-      </div>
     </div>
   </header>
 
-  <main class="main vacancy-main">
+  <main class="main">
     <div class="breadcrumbs">
       <div class="container">
         <ol class="breadcrumbs__list">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">
-              Main
+              Главная
             </a>
           </li>
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">
-              job title
+              Тарифы
             </a>
           </li>
         </ol>
       </div>
     </div>
 
-    <section class="vacancy">
+    <section class="page tarif">
       <div class="container">
-        <div class="vacancy__inner">
-
-          <div class="vacancy__info">
-            <div class="vacancy__info-box">
-              <h2 class="vacancy__info-title">job title</h2>
-              <a class="vacancy__info-link" href="#">worldwide</a>
-              <span class="vacancy__info-data">8 oct</span>
-            </div>
-
-            <ul class="vacancy__info-list">
-              <li class="vacancy__info-item">Required work experience – 3-6 years</li>
-              <li class="vacancy__info-item">Salary – $ 1000 - 2000</li>
-              <li class="vacancy__info-item">Wort format</li>
-            </ul>
-          </div>
-
-          <div class="vacancy-benefits">
-            <div class="vacancy-benefits__box">
-              <p class="vacancy-benefits__subtitle">Company info</p>
-              <a class="vacancy-benefits__link" href="#">
-                <img class="vacancy-benefits__img" src="./images/unnamed.png" alt="">
-              </a>
-            </div>
-            <div class="vacancy-benefits__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum id dui orci egestas proin.
-            </div>
-          </div>
-
-        </div>
-        <div class="vacancy__content">
-          <h2 class="vacancy__content-title">Descriotion</h2>
-          <p class="vacancy__content-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu id pharetra cursus gravida libero
-            vel nunc. Adipiscing massa nisi, quam mattis.
-          </p>
-          <ul class="vacancy__list">
-            <li class="vacancy__list-item">Lorem ipsum dolor sit amet</li>
-            <li class="vacancy__list-item">Consectetur adipiscing elit. </li>
-            <li class="vacancy__list-item">Commodo arcu id pharetra cursus gravida libero vel nunc.</li>
-            <li class="vacancy__list-item">Adipiscing massa nisi, quam mattis.</li>
+        <div class="page__inner tarif__inner">
+          <h1 class="page__title tarif__title title">Тарифы</h1>
+          <h2 class="page__subtitle tarif__subtitle">Стандартная вакансия</h2>
+          <ul>
+            <li>Обычная эффективность</li>
+            <li>Срок размещения 30 дней</li>
+            <li>Публикуется только на сайте</li>
+            <li>Без анонса в Telegram канале</li>
+            <li>Без выделение вакансии тегом «Премиум» на сайте</li>
+            <li>Без еженедельного поднятия в топ поиска</li>
+            <p class="page__text">Разместить бесплатно</p>
           </ul>
-          <h2 class="vacancy__content-title">Skills</h2>
-          <ul class="vacancy__list">
-            <li class="vacancy__list-item">Lorem ipsum dolor sit amet</li>
-            <li class="vacancy__list-item">Consectetur adipiscing elit. </li>
-            <li class="vacancy__list-item">Commodo arcu id pharetra cursus gravida libero vel nunc.</li>
-            <li class="vacancy__list-item">Adipiscing massa nisi, quam mattis.</li>
+
+          <h2 class="page__subtitle tarif__subtitle">Премиум вакансия</h2>
+          <ul>
+            <li>Хит продаж</li>
+            <li>В x10 раз эффективнее стандартной вакансии</li>
+            <li>Срок размещения 30 дней</li>
+            <li>Публикуется на сайте</li>
+            <li>Анонс в Telegram канале</li>
+            <li>Выделение вакансии тегом «Премиум»</li>
+            <li>Еженедельное поднятие в топ поиска</li>
           </ul>
-          <p class="vacancy__content-slogan">
-            Please write a cover letter
-          </p>
-          <a class="vacancy__btn" href="#">
-            Apply
-            <span class="material-symbols-outlined">
-              arrow_right_alt
-            </span>
-          </a>
+          <p class="page__text">Разместить бесплатно</p>
         </div>
-      </div>
       </div>
     </section>
   </main>
@@ -133,54 +92,54 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__item footer__articles">
-          <p class="footer__title">Articles</p>
+          <p class="footer__title">Статьи</p>
           <p class="footer__text">Magna lectus nisl sed non adipiscing fermentum</p>
           <p class="footer__text">Ipsum convallis mattis enim gravida</p>
           <p class="footer__text">Et enim semper neque, amet sodales volutpat mauris ornare</p>
           <a class="footer__link" href="https://antonborod1n.github.io/indonesia/public/blog.html">
             All articles
             <span class="material-symbols-outlined">
-              arrow_right_alt
+              arrow_forward
             </span>
           </a>
         </div>
         <div class="footer__item footer__menu">
-          <p class="footer__title">Information</p>
+          <p class="footer__title">Информация</p>
           <ul class="footer__list">
             <li class="footer__list-item">
               <a class="footer__list-link" href="#">
-                Placement rules
+                Правила размещения
               </a>
             </li>
             <li class="footer__list-item">
               <a class="footer__list-link" href="https://antonborod1n.github.io/indonesia/public/policy.html">
-                Privacy Policy
+                Политика конфиденциальности
               </a>
             </li>
             <li class="footer__list-item">
               <a class="footer__list-link" href="#">
-                FAQ
+                Вопросы и ответы
               </a>
             </li>
             <li class="footer__list-item">
               <a class="footer__list-link" href="#">
-                About
+                О компании
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__item footer__contact">
           <ul class="footer__list">
-            <li class="footer__title">Contact</li>
-            <li class="footer__list-item">Tel. Those. Supports: _______</li>
-            <li class="footer__list-item">Contact phone: ____________</li>
-            <li class="footer__list-item">Mail for appeals: _______</li>
-            <li class="footer__list-item">General site mail: _________</li>
+            <li class="footer__title">Контакты</li>
+            <li class="footer__list-item">Тел. Тех. Поддержки: _______</li>
+            <li class="footer__list-item">Контактный тел: ____________</li>
+            <li class="footer__list-item">Почта для обращений: _______</li>
+            <li class="footer__list-item">Общая почта сайта: _________</li>
           </ul>
 
           <div class="footer__contact-box">
             <div class="footer__social">
-              <a class="footer__social-link" href="#">
+              <a class="footer__social-link" href="https://telegram.org/">
                 <svg width="40" height="40" fill="none">
                   <use xlink:href="images/icons/social/sprite.svg#telegram">
                   </use>
@@ -198,7 +157,7 @@
             </div>
           </div>
         </div>
-        <a class="footer__logo" href="https://telegram.org/" target="_blank">
+        <a class="footer__logo" href="https://antonborod1n.github.io/indonesia/public/index.html" target="_blank">
           <img class="footer__logo-img" src="./images/logo.svg" alt="logo">
         </a>
       </div>

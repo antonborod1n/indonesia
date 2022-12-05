@@ -81,6 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   //Кнопки 
+
   function filterButtons() {
     const filterItems = document.querySelectorAll('.offer__item');
     const controlBtns = document.querySelector('.top__control-btns');
@@ -106,16 +107,16 @@ window.addEventListener('DOMContentLoaded', () => {
   let items = 5;
 
   showMoreBtn.addEventListener('click', () => {
-    const filterItems = document.querySelectorAll('.offer__item');
-    const itemsLength = filterItems.length;
+    const itemsLength = document.querySelectorAll('.offer__item').length;
     items += 5;
+
     const arr = Array.from(document.querySelectorAll('.offer__item'));
     const visibleArr = arr.slice(0, items);
 
     visibleArr.forEach(elem => {
-      elem.classList.add('offer__item-visible');
+      elem.classList.add('visible');
     });
-    console.log(itemsLength)
+
     if (visibleArr.length === itemsLength) {
       showMoreBtn.style.display = 'none';
     }
