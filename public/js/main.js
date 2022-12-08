@@ -30,12 +30,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
   getOffers();
 
+  //Поиск
+  const searchInput = document.querySelector('.search__input');
+  const searchBtn = document.querySelector('.search__btn');
+  let searchValue = '';
+
+  searchBtn.addEventListener('click', function () {
+    filterSerch()
+  })
+
+  searchInput.addEventListener('input', function (e) {
+    searchValue = e.target.value.trim();
+  })
+
+  function filterSerch() {
+    let filterArr = arr.filter(item => {
+      if (item.title.includes(searchValue)) {
+        return true;
+      } else {
+        return false;
+      }
+    })
+  }
+
   //Отрисовка на странице
   function renderOffers(offerArr) {
-    offerArr.forEach(item => {
-      const newArr = item.product;
-      newArr.forEach(elem => {
-        const productHtml = `
+    offerArr.forEach(elem => {
+      const productHtml = `
                             <div class="offer__item ${elem.company.toLowerCase()} ${elem.profile.toLowerCase()}" data-id="${elem.id}">
                             <div class="offer__preview-top">
                               <div class="offer__preview-top-box">
@@ -74,9 +95,8 @@ window.addEventListener('DOMContentLoaded', () => {
                             </div>
                           </div>
         `;
-        mainOfferBox.insertAdjacentHTML('afterbegin', productHtml);
-        filterButtons();
-      });
+
+      filterButtons();
     });
   }
 
@@ -102,7 +122,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   //Кнопка показа show more
-
   const showMoreBtn = document.querySelector('.show-more__btn');
   let items = 5;
 
@@ -121,9 +140,19 @@ window.addEventListener('DOMContentLoaded', () => {
       showMoreBtn.style.display = 'none';
     }
   })
-});
+
+  //Меню языковое 
+  const languagesMenuBtn = document.querySelector('.header__languages-menu-btn');
+  const languagesMenu = document.querySelector('.header__languages-menu');
+
+  languagesMenuBtn.addEventListener('click', function () {
+    languagesMenu.classList.toggle('header__languages-menu--active');
+    languagesMenu.addEventListener('click', function (e) {
+      if (e.target.classList.contains('header__languages-link')) {
+        languagesMenu.classList.remove('header__languages-menu--active');
+      }
+    })
+  })
 
 
-
-
-
+})

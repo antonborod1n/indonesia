@@ -11,8 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="css/jquery.formstyler.css">
-  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,14 +23,12 @@
           <img class="logo__img" src="./images/logo.svg" alt="logo">
         </a>
         <div class="header__languages">
-          <form action="#">
-            <label class="header__languages-label" for="location">
-              <select class="header__languages-select" name="location" id="local">
-                <option class="header__languages-option" value="en">English</option>
-                <option class="header__languages-option" value="ba">Bahasa</option>
-              </select>
-            </label>
-          </form>
+          <div class="header__languages-menu-btn">English</div>
+          <div class="header__languages-menu">
+            <a class="header__languages-link" href="http://localhost:3000/blog.html">English</a>
+            <a class="header__languages-link" href="http://localhost:3000/article.html">Bahasa</a>
+          </div>
+
           <button class="header__btn btn" type="button">Post a job</button>
         </div>
       </div>
@@ -61,6 +57,7 @@
               <button class="top-control-btn" type="button" data-filter="github">Github</button>
               <button class="top-control-btn" type="button" data-filter="angellist">Angellist</button>
             </div>
+
           </div>
         </div>
       </div>
@@ -185,48 +182,6 @@
           <div class="offer__content">
             <div class="offer__preview">
 
-              <div class="offer__item">
-                <div class="offer__preview-top">
-                  <div class="offer__preview-top-box">
-                    <p class="offer__preview-top-title">job title</p>
-                    <div class="offer__preview-top-price">
-                      <span>$</span>
-                      <span>1000</span>
-                      <span>-</span>
-                      <span>2000</span>
-                    </div>
-                  </div>
-                  <div class="offer__preview-top-box">
-                    <a class="offer__preview-top-link" href="#">worldwide</a>
-                    <a class="offer__preview-top-logo" href="#">
-                      <img class="offer__preview-top-img" src="../public/images/logo-the-coca-cola-company-1600-800.jpg"
-                        alt="Logo">
-                    </a>
-                  </div>
-                </div>
-                <p class="offer__lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu id pharetra cursus gravida
-                  libero vel nunc. Adipiscing massa nisi, quam mattis...
-                  <a class="offer__lead-more" href="#">
-                    more
-                    <span class="material-symbols-outlined">
-                      arrow_right_alt
-                    </span>
-                  </a>
-                </p>
-                <div class="offer__meta">
-                  <a class="offer__meta-btn" href="#">
-                    Apply
-                    <span class="material-symbols-outlined">
-                      arrow_right_alt
-                    </span>
-                  </a>
-                  <span class="offer__meta-data">8 oct</span>
-                </div>
-              </div>
-
-
-
             </div>
             <button class="show-more__btn">Show more</button>
             <div class="offer__content-bottom">
@@ -302,7 +257,7 @@
           </ul>
 
           <div class="footer__contact-box">
-            <div class="footer__social">
+            <!-- <div class="footer__social">
               <a class="footer__social-link" href="#">
                 <svg width="40" height="40" fill="none">
                   <use xlink:href="images/icons/social/sprite.svg#telegram">
@@ -315,7 +270,7 @@
                   </use>
                 </svg>
               </a>
-            </div>
+            </div> -->
             <div class="footer__copy">
               <p class="footer__copy-text">2022 © Copywright</p>
             </div>
@@ -327,11 +282,8 @@
       </div>
     </div>
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="js/jquery.formstyler.js"></script>
-  <script src="js/jquery.formstyler.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
