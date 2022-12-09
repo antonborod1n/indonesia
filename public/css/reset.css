@@ -58,8 +58,6 @@ a[class] {
     text-decoration: none;
 }
 
-/* ------------------------- */
-
 body {
     display: flex;
     flex-direction: column;
@@ -99,7 +97,6 @@ a {
     margin: 0 auto;
 }
 
-
 .btn {
     border: none;
     cursor: pointer;
@@ -112,6 +109,19 @@ a {
     color: #333333;
 }
 
+.subtitle {
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 20px;
+}
+
+.page__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 20px 0;
+}
+
 .vacancy-main,
 .policy-main {
     background: rgba(255, 255, 255, 0.7);
@@ -121,75 +131,6 @@ a {
 .header-page {
     padding-bottom: 55px;
 }
-
-.jq-selectbox__select {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 32px;
-    padding: 0 25px 0 0;
-    border: none;
-    border-bottom-color: none;
-    border-radius: 0px;
-    background: transparent;
-    box-shadow: none;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #333333;
-    text-shadow: none;
-}
-
-.jq-selectbox__select:hover {
-    background: transparent;
-}
-
-.jq-selectbox__trigger {
-    border-left: none;
-}
-
-.jq-selectbox__trigger-arrow {
-    position: absolute;
-    top: 13px;
-    right: 8px;
-    width: 11px;
-    height: 6px;
-    border: none;
-    background-image: url(../images/icons/arrow-down.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.jq-selectbox__dropdown {
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 0px 30px rgba(118, 115, 255, 0.3);
-    backdrop-filter: blur(50px);
-    border-radius: 5px;
-    width: 100%;
-    margin: 2px 0 0;
-    padding: 0;
-    border: none;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #333333;
-}
-
-.jq-selectbox li:hover {
-    background-color: #7774FF;
-    color: #FFF;
-}
-
-.jq-selectbox li.selected {
-    background-color: #FFF;
-    color: #333333;
-}
-
 
 .breadcrumbs {
     padding: 34px 0 20px;
@@ -255,10 +196,6 @@ a {
         'wght' 200,
         'GRAD' 0,
         'opsz' 14
-}
-
-label span:hover {
-    color: #8d8d8d;
 }
 
 input[type="search"]::-webkit-search-decoration,

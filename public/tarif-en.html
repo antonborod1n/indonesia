@@ -11,8 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="css/jquery.formstyler.css">
-  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,14 +24,11 @@
           <img class="logo__img" src="./images/logo.svg" alt="logo">
         </a>
         <div class="header__languages">
-          <form action="#">
-            <label class="header__languages-label" for="location">
-              <select class="header__languages-select" name="location" id="local">
-                <option class="header__languages-option" value="en">English</option>
-                <option class="header__languages-option" value="ba">Bahasa</option>
-              </select>
-            </label>
-          </form>
+          <div class="header__languages-menu-btn">English</div>
+          <div class="header__languages-menu">
+            <a class="header__languages-link" href="http://localhost:3000/blog.html">English</a>
+            <a class="header__languages-link" href="http://localhost:3000/article.html">Bahasa</a>
+          </div>
           <button class="header__btn btn" type="button">Post a job</button>
         </div>
       </div>
@@ -70,7 +66,7 @@
             <li>Without highlighting the vacancy with the “Premium” tag on the site</li>
             <li>Without a weekly rise to the top of the search</li>
           </ul>
-          <p class="page__text">Post for free</p>
+          <a class="page__link tarif__link" href="#">Post for free</a>
 
           <h2 class="page__subtitle tarif__subtitle">Premium vacancy</h2>
           <ul>
@@ -82,7 +78,7 @@
             <li>Highlighting a job with the “Premium” tag</li>
             <li>Weekly promotion to the top of the search</li>
           </ul>
-          <p class="page__text">Post for free</p>
+          <a class="page__link tarif__link" href="#">Post for free</a>
         </div>
       </div>
     </section>
@@ -164,9 +160,6 @@
     </div>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="js/jquery.formstyler.js"></script>
-  <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
