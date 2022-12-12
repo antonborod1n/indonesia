@@ -52,6 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
   function renderOffers(data) {
     const arr = [];
     if (data.length === 0) {
+      showMoreBtn.style.display = 'none';
       return mainOfferBox.innerHTML = "No vacancies found. Please try another description";
     } else {
       for (let i = 0; i < data.length; i++) {
