@@ -156,16 +156,13 @@
     border-radius: 10px;
     font-size: 14px;
     line-height: 17px;
-    border: none;
-    cursor: pointer;
-    transition: transform .3s;
     font-weight: 400;
 }
 
-.top-control-btn:hover {
+/* .top-control-btn:hover {
     transition: transform .3s;
     transform: scale(1.1);
-}
+} */
 
 .top-link {
     background: #B5DBFF;

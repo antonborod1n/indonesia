@@ -49,8 +49,6 @@ window.addEventListener('DOMContentLoaded', () => {
   //Render offers
   const mainOfferBox = document.querySelector('.offer__preview');
 
-
-
   function renderOffers(data) {
     const arr = [];
     if (data.length === 0) {
@@ -105,7 +103,7 @@ window.addEventListener('DOMContentLoaded', () => {
   mainOfferBox.innerHTML = arrOffers.join('');
 
   //Buttons filter top 
-  function filterButtons() {
+  /* function filterButtons() {
     const filterItems = document.querySelectorAll('.offer__item');
     const controlBtns = document.querySelector('.top__control-btns');
 
@@ -124,7 +122,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  filterButtons()
+  filterButtons() */
 
   //Search
   const searchInput = document.querySelector('.search__input');
