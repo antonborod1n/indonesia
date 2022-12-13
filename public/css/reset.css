@@ -125,6 +125,7 @@ a {
 .page-main {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
 
 .header-page {
