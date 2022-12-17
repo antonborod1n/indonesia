@@ -28,6 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
       elem.classList.add('visible');
     });
 
+    console.log(visibleArr.length)
+
     if (visibleArr.length === itemsLength) {
       showMoreBtn.style.display = 'none';
     }
@@ -127,16 +129,28 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //Search
   const searchInput = document.querySelector('.search__input');
+  const filterSearchInput = document.querySelector('.filter-search__input');
   const searchBtn = document.querySelector('.search__btn');
   let searchValue = '';
 
   searchBtn.addEventListener('click', function () {
-    filterSerch()
+    filterSerch();
   })
 
   searchInput.addEventListener('input', function (e) {
     searchValue = e.target.value;
   })
+
+  filterSearchInput.addEventListener('input', function (e) {
+    searchValue = e.target.value;
+    filterSerch();
+  })
+
+  filterSearchInput.addEventListener('keyup', function (e) {
+    if (e.code === 'Enter') {
+      filter.classList.remove('filter--active');
+    }
+  });
 
   function filterSerch() {
     const mainOfferBox = document.querySelector('.offer__preview');
@@ -148,10 +162,50 @@ window.addEventListener('DOMContentLoaded', () => {
         return false;
       }
     })
+
+    if (filterArr.length < 5) {
+      showMoreBtn.style.display = 'none';
+    }
+
     const filterOffers = renderOffers(filterArr)
     mainOfferBox.innerHTML = filterOffers.join('');
   }
 
+  //Filter
+
+  const radioInputs = document.querySelectorAll('.form-sort__input');
+  const localInputs = document.querySelectorAll('.form-local__input');
+  const salaryInputs = document.querySelectorAll('.form-salary__input');
+
+  const filterItems = document.querySelectorAll('.offer__item');
+
+  radioInputs.forEach(item => {
+    if (item) {
+      item.addEventListener('change', function () {
+        if (this.value === 'latest') {
+
+        } else if (this.value === 'highest') {
+
+        }
+      })
+    }
+  })
+
+  localInputs.forEach(item => {
+    if (item) {
+      item.addEventListener('change', function () {
+        console.log(this.value)
+      })
+    }
+  })
+
+  salaryInputs.forEach(item => {
+    if (item) {
+      item.addEventListener('change', function () {
+        console.log(this.value)
+      })
+    }
+  })
 
 
 })
