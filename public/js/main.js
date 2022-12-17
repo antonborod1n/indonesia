@@ -141,6 +141,12 @@ window.addEventListener('DOMContentLoaded', () => {
     searchValue = e.target.value;
   })
 
+  searchInput.addEventListener('keyup', function (e) {
+    if (e.code === 'Enter') {
+      filterSerch();
+    }
+  })
+
   filterSearchInput.addEventListener('input', function (e) {
     searchValue = e.target.value;
     filterSerch();
