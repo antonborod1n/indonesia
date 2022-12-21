@@ -323,7 +323,7 @@
     background: #FFFFFF;
     border-radius: 5px;
     overflow-y: scroll;
-    width: 126px;
+    width: 145px;
     height: 210px;
 }
 
@@ -371,6 +371,10 @@
     padding: 5px 10px;
     font-weight: 400;
     cursor: pointer;
+}
+
+.form-local__label-box .form-local__checkbox {
+    padding: 5px;
 }
 
 /* OFFER */
@@ -533,14 +537,14 @@
     border-radius: 10px;
     cursor: pointer;
     transition: color .1s;
-    padding: 5px 20px 5px 10px;
+    padding: 5px 27px 5px 21px;
 }
 
 .form-local__show-more-btn:after {
     content: url(../images/icons/arrow-down.svg);
     position: relative;
     top: -1px;
-    right: -8px;
+    right: -12px;
 }
 
 /* FOOTER */
