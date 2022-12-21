@@ -422,6 +422,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .offer__preview-top-title {
@@ -433,6 +434,7 @@
 }
 
 .offer__preview-top-link {
+    display: inline-block;
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 16px;
@@ -441,6 +443,7 @@
     text-decoration: none;
     font-weight: 400;
     background: #B5DBFF;
+    margin-bottom: 5px;
 }
 
 .offer__preview-top-logo {
@@ -689,7 +692,7 @@
     line-height: 19px;
     color: #333333;
     text-decoration: none;
-    margin-right: 20px;
+    margin: 0 20px 10px 0;
 }
 
 .vacancy__info-data {
