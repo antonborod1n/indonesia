@@ -13,44 +13,17 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  //Button show more
-  const showMoreBtn = document.querySelector('.page__show-more-btn');
-  let items = 5;
-
-  showMoreBtn.addEventListener('click', () => {
-    const itemsLength = document.querySelectorAll('.offer__item').length;
-    items += 5;
-
-    const arr = Array.from(document.querySelectorAll('.offer__item'));
-    const visibleArr = arr.slice(0, items);
-
-    visibleArr.forEach(elem => {
-      elem.classList.add('visible');
-    });
-
-    if (visibleArr.length === itemsLength) {
-      showMoreBtn.style.display = 'none';
-    }
-  })
-
   //Filter button show more location
   const formShowMoreBtn = document.querySelector('.form-local__show-more-btn');
-  let localItems = 8;
+  const formLocalWidget = document.querySelector('.form-local__widget');
 
-  formShowMoreBtn.addEventListener('click', () => {
-    const itemsLength = document.querySelectorAll('.form-local__label').length;
-    localItems += 8;
-
-    const arr = Array.from(document.querySelectorAll('.form-local__label'));
-    const visibleArr = arr.slice(0, localItems);
-
-    visibleArr.forEach(elem => {
-      elem.classList.add('visible');
-    });
-
-    if (visibleArr.length === itemsLength) {
-      formShowMoreBtn.style.display = 'none';
-    }
+  formShowMoreBtn.addEventListener('click', function () {
+    formLocalWidget.classList.toggle('form-local__widget--active');
+    formLocalWidget.addEventListener('click', function (e) {
+      if (e.target.classList.contains('header__languages-link')) {
+        formLocalWidget.classList.remove('form-local__widget--active');
+      }
+    })
   })
 
   //Show filter mobile

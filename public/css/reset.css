@@ -204,3 +204,63 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
+
+.pagination .pagination__link-prev .material-symbols-outlined {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 14
+}
+
+.pagination .pagination__link-next .material-symbols-outlined {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 14
+}
+
+.pagination {
+    padding-bottom: 20px;
+}
+
+.pagination__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.pagination__link--active {
+    background: #B7B6FF;
+}
+
+.pagination__link-next {
+    position: relative;
+    padding: 5px 30px 5px 10px;
+}
+
+.pagination__link-prev {
+    position: relative;
+    padding: 5px 10px 5px 30px;
+}
