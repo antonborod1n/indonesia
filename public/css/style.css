@@ -140,31 +140,15 @@
 .top__control-title {
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .top__control-btns {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 46px;
 }
-
-.top-control-btn {
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 400;
-}
-
-/* .top-control-btn:hover {
-    transition: transform .3s;
-    transform: scale(1.1);
-} */
 
 .top-link {
     background: #B5DBFF;
@@ -311,12 +295,24 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.form-local {
+    margin-bottom: 10px;
+}
+
 .form-sort__label,
 .form-local__label,
 .form-salary__label {
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+.form-local__label:nth-child(n + 9) {
+    display: none;
+}
+
+.form-local__label.visible {
+    display: inline-block;
 }
 
 .form-sort__label:last-child {
@@ -421,13 +417,14 @@
 }
 
 .offer__preview-top-logo {
+    display: inline-flex;
     border-radius: 10px;
     background: #F5F5F5;
 }
 
 .offer__preview-top-img {
-    width: 129px;
-    height: 39px;
+    width: auto;
+    height: 40px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -508,7 +505,6 @@
 
 .show-more__btn {
     display: block;
-    padding: 5px 10px;
     border: none;
     font-size: 16px;
     line-height: 19px;
@@ -518,13 +514,32 @@
     border-radius: 10px;
     cursor: pointer;
     transition: color .1s;
-    margin: 0px auto 30px;
 }
 
 .show-more__btn:hover {
     transition: color .1s;
     color: #333333;
 }
+
+.page__show-more-btn {
+    padding: 5px 10px;
+    margin: 0px auto 30px;
+}
+
+.form-local__show-more-btn {
+    display: inline-block;
+    padding: 5px 20px 5px 10px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.form-local__show-more-btn:after {
+    content: url(../images/icons/arrow-down.svg);
+    position: relative;
+    top: -1px;
+    right: -8px;
+}
+
+
 
 /* FOOTER */
 
@@ -640,7 +655,7 @@
 
 .vacancy-benefits__box {
     margin-bottom: 26px;
-    align-self: flex-end;
+    text-align: end;
 }
 
 .vacancy__info-box {
@@ -657,8 +672,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 98px;
-    height: 29px;
+    padding: 5px 10px;
     background: #B5DBFF;
     border-radius: 10px;
     font-size: 16px;
@@ -682,13 +696,14 @@
 }
 
 .vacancy-benefits__link {
+    display: inline-flex;
     border-radius: 10px;
     background: #F5F5F5;
 }
 
 .vacancy-benefits__img {
-    width: 129px;
-    height: 39px;
+    width: auto;
+    height: 40px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -712,6 +727,7 @@
 }
 
 .vacancy__content {
+    max-width: 700px;
     font-size: 20px;
     line-height: 24px;
     color: #333333;
@@ -738,10 +754,11 @@
 }
 
 .vacancy__btn {
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 10px 70px 10px 65px;
+    width: 212px;
+    height: 44px;
     background: #7774FF;
     border-radius: 10px;
     color: #FFFFFF;

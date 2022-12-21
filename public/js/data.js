@@ -34,7 +34,7 @@ const dataOffers = [
         "rank": "Senior",
         "language": "JavaScript",
         "new": true,
-        "imgLogo": "./images/company/1.avif"
+        "imgLogo": "./images/company/22.jpg"
     },
     {
         "title": "Unannounced Project Associate Production Engineer",
@@ -49,7 +49,7 @@ const dataOffers = [
         "rank": "Junior",
         "language": "Java",
         "new": true,
-        "imgLogo": "./images/company/2.avif"
+        "imgLogo": "./images/company/23.png"
     },
     {
         "title": "Unannounced Project Associate Production Engineer",
@@ -64,7 +64,7 @@ const dataOffers = [
         "rank": "Middle",
         "language": "PHP",
         "new": true,
-        "imgLogo": "./images/company/3.avif"
+        "imgLogo": "./images/company/24.png"
     },
     {
         "title": "Strategic Sourcing Senior Analyst Manager",
@@ -79,7 +79,7 @@ const dataOffers = [
         "rank": "Middle",
         "language": false,
         "new": true,
-        "imgLogo": "./images/company/4.avif"
+        "imgLogo": "./images/company/25.webp"
     },
     {
         "title": "Lead Architect",
@@ -94,7 +94,7 @@ const dataOffers = [
         "rank": "Lead",
         "language": false,
         "new": false,
-        "imgLogo": "./images/company/5.avif"
+        "imgLogo": "./images/company/26.png"
     },
     {
         "title": "Entry level Security Engineer",
@@ -109,7 +109,7 @@ const dataOffers = [
         "rank": "Junior+",
         "language": false,
         "new": false,
-        "imgLogo": "./images/company/6.avif"
+        "imgLogo": "./images/company/27.png"
     },
     {
         "title": "Senior Web and Brand Designer",

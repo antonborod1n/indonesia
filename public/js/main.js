@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   //Button show more
-  const showMoreBtn = document.querySelector('.show-more__btn');
+  const showMoreBtn = document.querySelector('.page__show-more-btn');
   let items = 5;
 
   showMoreBtn.addEventListener('click', () => {
@@ -28,10 +28,28 @@ window.addEventListener('DOMContentLoaded', () => {
       elem.classList.add('visible');
     });
 
-    console.log(visibleArr.length)
-
     if (visibleArr.length === itemsLength) {
       showMoreBtn.style.display = 'none';
+    }
+  })
+
+  //Filter button show more location
+  const formShowMoreBtn = document.querySelector('.form-local__show-more-btn');
+  let localItems = 8;
+
+  formShowMoreBtn.addEventListener('click', () => {
+    const itemsLength = document.querySelectorAll('.form-local__label').length;
+    localItems += 8;
+
+    const arr = Array.from(document.querySelectorAll('.form-local__label'));
+    const visibleArr = arr.slice(0, localItems);
+
+    visibleArr.forEach(elem => {
+      elem.classList.add('visible');
+    });
+
+    if (visibleArr.length === itemsLength) {
+      formShowMoreBtn.style.display = 'none';
     }
   })
 
@@ -105,28 +123,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const arrOffers = renderOffers(dataOffers);
   mainOfferBox.innerHTML = arrOffers.join('');
 
-  //Buttons filter top 
-  /* function filterButtons() {
-    const filterItems = document.querySelectorAll('.offer__item');
-    const controlBtns = document.querySelector('.top__control-btns');
-
-    controlBtns.addEventListener('click', (e) => {
-      const target = e.target;
-
-      if (target.tagName !== 'BUTTON') return false;
-      let filterClass = target.dataset['filter'];
-
-      filterItems.forEach(elem => {
-        elem.classList.remove('hide')
-        if (!elem.classList.contains(filterClass)) {
-          elem.classList.add('hide')
-        }
-      })
-    })
-  }
-
-  filterButtons() */
-
   //Search
   const searchInput = document.querySelector('.search__input');
   const filterSearchInput = document.querySelector('.filter-search__input');
@@ -155,6 +151,7 @@ window.addEventListener('DOMContentLoaded', () => {
   filterSearchInput.addEventListener('keyup', function (e) {
     if (e.code === 'Enter') {
       filter.classList.remove('filter--active');
+      searchValue = '';
     }
   });
 
@@ -176,43 +173,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const filterOffers = renderOffers(filterArr)
     mainOfferBox.innerHTML = filterOffers.join('');
   }
-
-  //Filter
-
-  const radioInputs = document.querySelectorAll('.form-sort__input');
-  const localInputs = document.querySelectorAll('.form-local__input');
-  const salaryInputs = document.querySelectorAll('.form-salary__input');
-
-  const filterItems = document.querySelectorAll('.offer__item');
-
-  radioInputs.forEach(item => {
-    if (item) {
-      item.addEventListener('change', function () {
-        if (this.value === 'latest') {
-
-        } else if (this.value === 'highest') {
-
-        }
-      })
-    }
-  })
-
-  localInputs.forEach(item => {
-    if (item) {
-      item.addEventListener('change', function () {
-        console.log(this.value)
-      })
-    }
-  })
-
-  salaryInputs.forEach(item => {
-    if (item) {
-      item.addEventListener('change', function () {
-        console.log(this.value)
-      })
-    }
-  })
-
 
 })
 
