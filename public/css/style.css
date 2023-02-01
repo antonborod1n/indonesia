@@ -315,14 +315,18 @@
     margin: 10px;
 }
 
+.form-local__container {
+    position: relative;
+}
+
 .form-local__widget {
     display: none;
 }
 
 .form-local__widget--active {
     position: absolute;
-    bottom: 20px;
-    left: 23px;
+    top: 32px;
+    left: 0;
     display: block;
     background: #FFFFFF;
     border-radius: 5px;
